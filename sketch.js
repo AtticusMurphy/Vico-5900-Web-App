@@ -14,13 +14,13 @@ function setup() {
   gui_setup.addColor(gui, "color");
   gui_setup.addColor(gui, "color2");
   gui_setup.addColor(gui, "color3");
-  gui_setup.add(gui, 'squares', 1, 10).step(1);
-  gui_setup.add(gui, 'distance', 10, 75).step(1);
+  gui_setup.add(gui, 'squares', 1, 50).step(1);
+  gui_setup.add(gui, 'distance', 10, 200).step(1);
   gui_setup.add(gui, 'strokeWeight', 1, 10).step(1);
   gui_setup.add(gui, 'roughness', 1, 10).step(1);
-  gui_setup.add(gui, "rotate", 2, 20).step(1);
-  gui_setup.add(gui, "translateX", 0, 1000).step(1);
-  gui_setup.add(gui, "translateY", -500, 500).step(1);
+  gui_setup.add(gui, "rotate", 0, 100).step(1);
+  gui_setup.add(gui, "translateX", -1000, 3000).step(1);
+  gui_setup.add(gui, "translateY", -1000, 1000).step(1);
   gui_setup.add(gui, "text");
   gui_setup.add(gui, "textsize", 0, 150).step(1);
   gui_setup.add(gui, "showDescription").onChange(description);
@@ -73,7 +73,7 @@ function cube(xPos, yPos, steps, num) {
 }
 
 function drawWords() {
-  text(gui.text, random(windowWidth), random(windowHeight));
+  text(gui.text, random(windowWidth/2), random(windowHeight/2));
   textSize(gui.textsize);
 }
 
@@ -95,8 +95,8 @@ function Gui() {
   this.strokeWeight = 3;
   this.roughness = 2;
   this.rotate = 2;
-  this.translateX = 572
-  this.translateY = -36
+  this.translateX = 1000
+  this.translateY = 0
   this.text = 'Hello Hello Hello';
   this.textsize = 64
   this.showDescription=true;
