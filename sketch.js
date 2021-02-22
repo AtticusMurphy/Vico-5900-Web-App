@@ -96,7 +96,7 @@ function Gui() {
   this.roughness = 2;
   this.rotate = 2;
   this.translateX = 1000
-  this.translateY = 0
+  this.translateY = -50
   this.text = 'Hello Hello Hello';
   this.textsize = 64
   this.showDescription=true;
