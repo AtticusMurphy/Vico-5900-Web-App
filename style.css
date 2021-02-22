@@ -86,7 +86,6 @@ canvas {
   width: 50vw;
   height: 100vh;
   font-family: Merriweather, serif;
-  overflow:scroll;
 }
 
 .div-block-2 {
